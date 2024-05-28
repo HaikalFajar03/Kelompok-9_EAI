@@ -1,0 +1,55 @@
+// routes/web.php
+
+use App\Http\Controllers\SuperAdminController;
+
+Route::get('/cari-penduduk-pelatihan-x', [SuperAdminController::class, 'cariPendudukPelatihanX']);
+// app/Http/Controllers/SuperAdminController.php
+
+namespace App\Http\Controllers;
+
+use App\Models\Penduduk;
+use Illuminate\Http\Request;
+
+class SuperAdminController extends Controller
+{
+    public function cariPendudukPelatihanX(Request $request)
+    {
+        // Mencari penduduk yang telah menyelesaikan pelatihan X
+        $pendudukPelatihanX = Penduduk::where('pelatihan', 'X')->get();
+
+        return view('hasil_pencarian', compact('pendudukPelatihanX'));
+    }
+}
+<!-- resources/views/hasil_pencarian.blade.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian Penduduk Pelatihan X</title>
+</head>
+<body>
+    <h2>Hasil Pencarian Penduduk Pelatihan X</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Usia</th>
+                <th>Pelatihan</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($pendudukPelatihanX as $penduduk)
+                <tr>
+                    <td>{{ $penduduk->nama }}</td>
+                    <td>{{ $penduduk->usia }}</td>
+                    <td>{{ $penduduk->pelatihan }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+    <p>Total penduduk yang telah menyelesaikan pelatihan X: {{ $pendudukPelatihanX->count() }}</p>
+</body>
+</html>
+

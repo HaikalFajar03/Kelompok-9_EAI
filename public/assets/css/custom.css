@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, "Lucida Console"    ,sans-serif;
+}
+
+button {
+    /* margin: 15px; */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.btn {
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-padding-y: 0.625rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-font-weight: 700;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #67748e;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.5rem;
+    --bs-btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.2rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: all 0.15s ease-in;
+  }
+  .btn-sm,
+.btn-group-sm>.btn {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-font-size: 0.75rem;
+  --bs-btn-border-radius: 0.5rem;
+}
+.btn-dark {
+    --bs-btn-color: #fff; /* Text color when button is active */
+    --bs-btn-bg: #344767; /* Background color when button is active */
+    --bs-btn-border-color: #344767;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2c3c58;
+    --bs-btn-hover-border-color: #2a3952;
+    --bs-btn-focus-shadow-rgb: 82, 99, 126;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2a3952;
+    --bs-btn-active-border-color: #27354d;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #344767;
+    --bs-btn-disabled-border-color: #344767;
+
+    /* Additional styles for non-active state */
+    color: #000; /* Text color when button is not active */
+    background-color: #ccc; /* Background color when button is not active */
+}
+.me-2 {
+    margin-right: 0.5rem !important;
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 10px; */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.ms-auto {
+    margin-left: auto !important;
+  }
+  .d-flex {
+  display: flex !important;
+}
+
+/* Accordion styles */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 97%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
