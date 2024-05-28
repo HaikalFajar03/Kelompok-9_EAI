@@ -49,99 +49,20 @@
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('contacts*') ? 'active' : '' }}" href="/contacts">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-phone text-warning text-sm opacity-10"></i>
+                        <i class="fas fa-exchange-alt text-warning text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Kontak</span>
+                    <span class="nav-link-text ms-1">Transaksi</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('databasependuduk*') ? 'active' : '' }}" href="/databasependuduk">
                     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-database text-warning text-sm opacity-10"></i>
+                        <i class="fas fa-coins text-warning text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Database Penduduk</span>
+                    <span class="nav-link-text ms-1">Anggaran</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" {{ Request::is('formulirpenduduk*') ? 'active' : '' }} href="/formulirpenduduk">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-file-alt text-success text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Formulir Penduduk</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('riwayat*') ? 'active' : '' }}" href="/riwayat">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-history text-info text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Riwayat</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('testujikemampuan*') ? 'active' : '' }}" href="/testujikemampuan">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-clipboard-check text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Uji Kemampuan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('rekomendasipekerjaan*') ? 'active' : '' }}" href="/rekomendasipekerjaan">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-lightbulb text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Rekomendasi Pekerjaan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('kategoripekerjaan*') ? 'active' : '' }}" href="/kategoripekerjaan">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-briefcase text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Kategori Pekerjaan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('jobs*') ? 'active' : '' }}" href="{{ route('jobs.index') }}">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-desktop text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lowongan Pekerjaan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('bimbingan*') ? 'active' : '' }}" href="/bimbingan">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-graduation-cap text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Bimbingan Karir</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('lokasi*') ? 'active' : '' }}" href="/lokasi">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-map-marker-alt text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Lokasi Kerja</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('wilayah*') ? 'active' : '' }}" href="/wilayah">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-map text-danger text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Wilayah Terkait</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ Request::is('feedback*') ? 'active' : '' }}" href="/feedback">
-                    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="fas fa-comments text-warning text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Feedback</span>
-                </a>
-            </li>
+
             <li class="nav-item mt-3">
             <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
             </li>
